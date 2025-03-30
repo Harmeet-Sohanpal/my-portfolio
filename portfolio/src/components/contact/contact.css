@@ -1,0 +1,278 @@
+.contact-main{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(32,32,32);
+    justify-content: center;
+    transition: ease-in-out 0.4s;
+
+}
+
+.contact-main-l{
+    display: flex;
+    height: 100vh;
+    background-color: #F5EFFF;
+    justify-content: center;
+    transition: ease-in-out 0.4s;
+
+}
+
+.contact-main-l h1{
+    color: rgb(34, 34, 34);
+}
+
+.contact-main-l p{
+    color: rgb(34, 34, 34);
+}
+
+
+.form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.contact-main-l input{
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(38, 38, 38, 0.159);
+}
+
+.contact-main-l textarea{
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(38, 38, 38, 0.159);
+
+}
+
+input{
+    margin-bottom: 17px;
+    padding: 10px;
+    width: 400px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'suse';
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+
+::placeholder{
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+
+
+textarea{
+    padding: 10px;
+    width: 400px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    color: rgb(46, 46, 46);
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+
+}
+
+.sub{
+    width: 100%;
+    margin-top: 10px;
+    /* border-radius: 0; */
+    font-family: 'suse';
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.left{
+    margin-top: -40px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-heading{
+    font-size: 40px;
+    color: white;
+    font-family: 'suse';
+}
+
+.mail{
+    margin-top:0px;
+    display: flex;
+    align-items: center;
+}
+
+.mail p{
+    color: white;
+    font-weight: 400;
+    
+    margin-left: 20px;
+}
+
+.em{
+    width: 25px;
+    height: auto;
+}
+
+.success-message {
+    height: 80px;
+    width: 350px;
+    position: fixed; 
+    top:20px; 
+    left: 40%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(115, 255, 143); 
+    color: rgb(47, 47, 47); 
+    font-family: 'suse';
+    font-weight: 600;
+    z-index: 1000;
+    font-size: 16px; 
+    box-shadow: 0px 10px 10px 0px rgb(0, 0, 0);
+    transition: ease-in-out 0.4s;
+}
+
+
+@media(max-width: 770px){
+    .contact-main{
+        flex-direction: column;
+        margin: 100px 0px 0px 0px;
+        padding-top: 50px;
+        overflow-y: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-main-l{
+        flex-direction: column;
+        margin: 100px 0px 0px 0px;
+        padding-top: 50px;
+        overflow-y: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        margin-top: 10px;
+    }
+}
+
+
+@media(max-width: 430px){
+    .contact-main{
+        flex-direction: column;
+        margin: 80px 0px 0px 0px;
+        overflow-y: auto;
+    }
+
+    .contact-main-l{
+        flex-direction: column;
+        margin: 80px 0px 0px 0px;
+        overflow-y: auto;
+        background-color: #F5EFFF;
+    }
+
+    .left{
+        width: 100vw;
+        align-items: center;
+        /* margin: 0px 0px 10px 0px; */
+        margin: 50px 0px 0px 0px;
+    }
+
+    .left-heading{
+        font-size: 30px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .mail p{
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 0px 0px
+    }
+    input{
+        width: 260px;
+    } 
+    textarea{
+        width: 260px;
+    }
+}
+
+
+/* @media(max-width: 420px){
+    .left{
+        margin: -200px 0px 0px 0px;
+        min-width: 0;
+    }
+} */
+
+
+@media(max-width: 350px){
+    .contact-main{
+        flex-direction: column;
+        overflow-y: auto;
+        margin-top: 60px;
+    }
+
+    .left{
+        width: 100vw;
+        align-items: center;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .left-heading{
+        font-size: 30px;
+    }
+
+    .mail p{
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    input{
+        width: 260px;
+    } 
+    textarea{
+        width: 260px;
+    }
+}
+
+
+@media(max-width: 335px){
+    .left{
+        margin: 170px 0px 0px 0px;
+    }
+}
+
+
+
+@media(max-width: 330px){
+    .left{
+        margin: 170px 0px 0px 0px;
+    }
+}
+
