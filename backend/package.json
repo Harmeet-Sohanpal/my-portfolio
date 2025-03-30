@@ -14,5 +14,8 @@
     "mongoose": "^8.7.1",
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
